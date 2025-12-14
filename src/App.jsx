@@ -1,10 +1,10 @@
 import { PostProvider } from '@/providers/PostProvider';
-import { PostList } from './features/Home/PostList';
+import { HomeLayout } from './features/Home/HomeLayout';
 
 function App() {
   return (
     <PostProvider>
-      <PostList />
+      <HomeLayout />
     </PostProvider>
   );
 }
