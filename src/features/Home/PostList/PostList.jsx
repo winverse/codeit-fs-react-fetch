@@ -17,7 +17,6 @@ export function PostList() {
     handleUpdate,
   } = usePostContext();
 
-  console.log('posts', posts);
   if (isLoading) {
     return <Spinner />;
   }
