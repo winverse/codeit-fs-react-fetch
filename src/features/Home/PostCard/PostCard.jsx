@@ -43,7 +43,7 @@ export function PostCard({ post }) {
           <textarea
             value={editedBody}
             onChange={(e) => setEditedBody(e.target.value)}
-          ></textarea>
+          />
           <div className={styles.formActions}>
             <button
               onClick={handleSaveClick}

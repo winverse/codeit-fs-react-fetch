@@ -10,7 +10,9 @@ export function AddPostForm({
   onSubmit,
   titleInputRef,
 }) {
-  if (!isFormOpen) return null;
+  if (!isFormOpen) {
+    return null;
+  }
 
   const { title, body } = formState;
   const { setTitle, setBody } = formActions;
@@ -32,7 +34,7 @@ export function AddPostForm({
         placeholder="내용"
         value={body}
         onChange={(e) => setBody(e.target.value)}
-        required
+        required={true}
       />
 
       <div className={styles.formActions}>
