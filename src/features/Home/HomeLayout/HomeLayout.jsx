@@ -69,7 +69,7 @@ export function HomeLayout() {
       />
 
       <p className={styles.totalLengthText}>
-        총 게시물 제목 길이 (useMemo): {totalTitleLength}
+        총 게시물 제목 길이 (useMemo): {totalTitleLength()}
       </p>
 
       <PostList />
